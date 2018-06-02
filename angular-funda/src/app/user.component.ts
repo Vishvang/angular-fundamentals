@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-user',
   template: `
     <p>Hello, I am {{ name }} !</p>
-    <p><input type="text" (input)="onClickInput($event)"/></p>
+    <p><input type="text" (input)="onClickInput($event)" value="{{ name }}"/></p>
     <p>I am the user component</p>
     `
 })
