@@ -7,6 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     <input type="text" (input)="onClickInput($event)" [value]="name">
     <p>Hello, I am {{ name }} !</p>
     <p>I am the user component</p>
+    <app-user-detail></app-user-detail>
     `
 })
 
