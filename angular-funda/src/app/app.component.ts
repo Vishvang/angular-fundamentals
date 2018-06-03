@@ -9,8 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   rootName = 'Rocky';
+  rootItems = ['Apples', 'Banana', 'Cherries'];
 
   nameChanged(newName) {
       this.rootName = newName;
+  }
+
+  userInputPass(newItem) {
+    this.rootItems.push(newItem);
+    console.log(this.rootItems);
   }
 }

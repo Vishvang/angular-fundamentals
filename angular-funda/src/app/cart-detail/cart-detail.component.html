@@ -1,0 +1,8 @@
+<p>
+  cart-detail works! {{ items }}
+</p>
+<div>
+  <!-- <input type="text" [value]="items" (input)="OnUserInput($event)"> -->
+  <input type="text" [(ngModel)]="newItem">
+  <button (click)="OnAddItems()">Add Items</button>
+</div>
