@@ -9,5 +9,11 @@
   <div>
     <button (click)="OnAddItems()" class="btn btn-primary">Add Items</button>
   </div>
-  <p> Random Number from third party JS library Lodash : {{ number }} </p>
+  <!-- <p> Random Number from third party JS library Lodash : {{ number }} </p> -->
 </div>
+
+<hr>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+</ul>
