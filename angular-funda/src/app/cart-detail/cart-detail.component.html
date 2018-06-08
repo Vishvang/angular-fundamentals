@@ -7,7 +7,10 @@
     <input type="text" [(ngModel)]="newItem" >
   </p>
   <div>
-    <button (click)="OnAddItems()" class="btn btn-primary">Add Items</button>
+    <button
+    (click)="OnAddItems()"
+    class="btn btn-primary"
+    [ngClass]="{ 'btn-primary': newItem!= '', 'btn-default': newItem === ''}">Add Items</button>
   </div>
   <!-- <p> Random Number from third party JS library Lodash : {{ number }} </p> -->
 </div>
